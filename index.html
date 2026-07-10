@@ -22,8 +22,9 @@
 
       .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px
+        grid-template-columns: repeat(4, 320px);
+        justify-content: center;
+        gap: 20px;
       }
 
       .card {
@@ -76,6 +77,69 @@
         font-weight: bold
       }
 
+      @media (max-width:1400px) {
+        .grid {
+          grid-template-columns: repeat(3, 320px);
+        }
+      }
+
+      @media (max-width:1050px) {
+        .grid {
+          grid-template-columns: repeat(2, 320px);
+        }
+      }
+
+      @media (max-width:700px) {
+        .grid {
+          grid-template-columns: 320px;
+        }
+      }
+
+      .card {
+        width: 320px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .carousel {
+        height: 200px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .cat {
+        width: max-content;
+        margin: 30px auto;
+      }
+
+      .cat h2 {
+        width: calc(4 * 320px + 3 * 20px);
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+      }
+
+      @media (max-width:1400px) {
+        .cat h2 {
+          width: calc(3 * 320px + 2 * 20px);
+        }
+      }
+
+      @media (max-width:1050px) {
+        .cat h2 {
+          width: calc(2 * 320px + 1 * 20px);
+        }
+      }
+
+      @media (max-width:700px) {
+        .cat h2 {
+          width: 320px;
+        }
+      }
     </style>
     <style>
       .pesq {
@@ -98,7 +162,7 @@
       <h2>Acessórios</h2>
       <div class="grid">
         <div class="card">
-          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Espreguiçadeira/cadeiraevolutiva/600/400"><img src="https://picsum.photos/seed/Espreguiçadeira/cadeiraevolutiva2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://m.media-amazon.com/images/I/51eimYLwJdL._AC_SX679_.jpg"><img src="https://picsum.photos/seed/Espreguiçadeira/cadeiraevolutiva2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
             <h3>Espreguiçadeira / cadeira evolutiva</h3>
             <span class="badge pesq">Em pesquisa</span>
