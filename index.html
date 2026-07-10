@@ -1,388 +1,389 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baby Items We Already Have</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#f6f7fb;
-    color:#333;
-    padding:30px;
-}
-
-header{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-header h1{
-    color:#d65b84;
-    margin-bottom:10px;
-}
-
-header p{
-    color:#666;
-}
-
-.category{
-    margin-bottom:50px;
-}
-
-.category h2{
-    background:#d65b84;
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    margin-bottom:20px;
-}
-
-.item{
-    background:white;
-    border-radius:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-    display:flex;
-    gap:25px;
-    margin-bottom:25px;
-    overflow:hidden;
-}
-
-.carousel{
-    position:relative;
-    width:320px;
-    min-width:320px;
-    height:220px;
-    overflow:hidden;
-}
-
-.carousel img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    display:none;
-}
-
-.carousel img.active{
-    display:block;
-}
-
-.carousel button{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    background:rgba(0,0,0,.5);
-    color:white;
-    border:none;
-    font-size:24px;
-    cursor:pointer;
-    width:35px;
-    height:45px;
-}
-
-.prev{
-    left:0;
-}
-
-.next{
-    right:0;
-}
-
-.info{
-    padding:20px;
-    flex:1;
-}
-
-.info h3{
-    margin-bottom:12px;
-    color:#444;
-}
+<html lang="pt">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Baby</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #f5f5f5;
+        margin: 20px
+      }
+
+      h1 {
+        text-align: center
+      }
+
+      .cat {
+        margin: 30px 0
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px #0002;
+        overflow: hidden
+      }
+
+      .carousel {
+        position: relative
+      }
+
+      .carousel img {
+        display: none;
+        width: 100%;
+        height: 200px;
+        object-fit: cover
+      }
+
+      .carousel img.active {
+        display: block
+      }
+
+      .btn {
+        position: absolute;
+        top: 45%;
+        background: #0008;
+        color: #fff;
+        border: 0;
+        padding: 6px
+      }
+
+      .prev {
+        left: 0
+      }
+
+      .next {
+        right: 0
+      }
+
+      .content {
+        padding: 15px
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 20px;
+        font-weight: bold
+      }
+
+    </style>
+    <style>
+      .pesq {
+        background: #fff3cd
+      }
+
+      .comp {
+        background: #f8d7da
+      }
+
+      .na {
+        background: #d1ecf1
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>👶 Lista do Baby Biscoito</h1>
+    <div class="cat">
+      <h2>Acessórios</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Espreguiçadeira/cadeiraevolutiva/600/400"><img src="https://picsum.photos/seed/Espreguiçadeira/cadeiraevolutiva2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Espreguiçadeira / cadeira evolutiva</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/MochiladoBebé/600/400"><img src="https://picsum.photos/seed/MochiladoBebé2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Mochila do Bebé</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Mantas/600/400"><img src="https://picsum.photos/seed/Mantas2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Mantas</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Portadocumentos/600/400"><img src="https://picsum.photos/seed/Portadocumentos2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Porta documentos</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cat">
+      <h2>Amamentação</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/AlmofadadeAmamentação/600/400"><img src="https://picsum.photos/seed/AlmofadadeAmamentação2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Almofada de Amamentação</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Bombadeleite/600/400"><img src="https://picsum.photos/seed/Bombadeleite2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Bomba de leite</h3>
+            <span class="badge na">Não urgente</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Sutiãdeamamentação/600/400"><img src="https://picsum.photos/seed/Sutiãdeamamentação2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Sutiã de amamentação</h3>
+            <span class="badge na">Não urgente</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cat">
+      <h2>Brinquedos</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Playgym/600/400"><img src="https://picsum.photos/seed/Playgym2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Play gym</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cat">
+      <h2>Comer</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/CadeiradeAlimentação/600/400"><img src="https://picsum.photos/seed/CadeiradeAlimentação2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Cadeira de Alimentação</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cat">
+      <h2>Dormir</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Berço/600/400"><img src="https://picsum.photos/seed/Berço2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Berço</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Next2Me/600/400"><img src="https://picsum.photos/seed/Next2Me2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Next 2 Me</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Sacosdedormir/600/400"><img src="https://picsum.photos/seed/Sacosdedormir2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Sacos de dormir</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Luzdepresença/600/400"><img src="https://picsum.photos/seed/Luzdepresença2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Luz de presença</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Mobíliadoquarto(cómoda)/600/400"><img src="https://picsum.photos/seed/Mobíliadoquarto(cómoda)2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Mobília do quarto (cómoda)</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cat">
+      <h2>Higiene e Saúde</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Mudafraldas/600/400"><img src="https://picsum.photos/seed/Mudafraldas2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Muda fraldas</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Termómetro/600/400"><img src="https://picsum.photos/seed/Termómetro2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Termómetro</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Escova/600/400"><img src="https://picsum.photos/seed/Escova2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Escova</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Kitcorta-unhas/600/400"><img src="https://picsum.photos/seed/Kitcorta-unhas2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Kit corta-unhas</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Banheira+suporterecém-nascido/600/400"><img src="https://picsum.photos/seed/Banheira+suporterecém-nascido2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Banheira + suporte recém-nascido</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cat">
+      <h2>Roupa</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Babetes/600/400"><img src="https://picsum.photos/seed/Babetes2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Babetes</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Meias/600/400"><img src="https://picsum.photos/seed/Meias2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Meias</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Gorros/600/400"><img src="https://picsum.photos/seed/Gorros2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Gorros</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Babygrows/600/400"><img src="https://picsum.photos/seed/Babygrows2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Babygrows</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Fraldinhasdepano/600/400"><img src="https://picsum.photos/seed/Fraldinhasdepano2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Fraldinhas de pano</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cat">
+      <h2>Transporte e segurança</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Carrinho/600/400"><img src="https://picsum.photos/seed/Carrinho2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Carrinho</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Alcofa/600/400"><img src="https://picsum.photos/seed/Alcofa2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Alcofa</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/CadeiraAuto/600/400"><img src="https://picsum.photos/seed/CadeiraAuto2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Cadeira Auto</h3>
+            <span class="badge pesq">Em pesquisa</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Marsúpio/600/400"><img src="https://picsum.photos/seed/Marsúpio2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Marsúpio</h3>
+            <span class="badge na">Não urgente</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://picsum.photos/seed/Intercomunicador/600/400"><img src="https://picsum.photos/seed/Intercomunicador2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Intercomunicador</h3>
+            <span class="badge comp">Por comprar</span>
+            <p>Descrição a adicionar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll(".carousel").forEach(c => {
+        let i = 0,
+          imgs = c.querySelectorAll("img");
+
+        function s() {
+          imgs.forEach((m, n) => m.classList.toggle("active", n === i));
+        }
+        c.querySelector(".next").onclick = () => {
+          i = (i + 1) % imgs.length;
+          s()
+        };
+        c.querySelector(".prev").onclick = () => {
+          i = (i - 1 + imgs.length) % imgs.length;
+          s()
+        };
+      });
+    </script>
+  </body>
 
-.status{
-    margin:15px 0;
-    font-weight:bold;
-}
-
-.description{
-    color:#666;
-    line-height:1.6;
-}
-
-label{
-    cursor:pointer;
-}
-
-input[type=checkbox]{
-    transform:scale(1.2);
-    margin-right:10px;
-}
-
-footer{
-    text-align:center;
-    margin-top:60px;
-    color:#777;
-}
-
-@media(max-width:800px){
-
-.item{
-    flex-direction:column;
-}
-
-.carousel{
-    width:100%;
-    min-width:100%;
-}
-
-}
-</style>
-
-</head>
-<body>
-
-<header>
-<h1>👶 Baby Items We Already Have</h1>
-<p>
-Friends and family, thank you for thinking of us! ❤️
-Here's what we've already purchased.
-</p>
-</header>
-
-<!-- ==================== -->
-<section class="category">
-
-<h2>🛏 Nursery Furniture</h2>
-
-<div class="item">
-
-<div class="carousel">
-
-<img class="active" src="https://picsum.photos/600/400?random=11">
-<img src="https://picsum.photos/600/400?random=12">
-<img src="https://picsum.photos/600/400?random=13">
-
-<button class="prev">&#10094;</button>
-<button class="next">&#10095;</button>
-
-</div>
-
-<div class="info">
-
-<h3>Baby Crib</h3>
-
-<div class="status">
-<label>
-<input type="checkbox" checked disabled>
-Already Purchased
-</label>
-</div>
-
-<div class="description">
-A sturdy wooden crib that converts into a toddler bed.
-We're all set for sleeping!
-</div>
-
-</div>
-
-</div>
-
-<div class="item">
-
-<div class="carousel">
-
-<img class="active" src="https://picsum.photos/600/400?random=21">
-<img src="https://picsum.photos/600/400?random=22">
-
-<button class="prev">&#10094;</button>
-<button class="next">&#10095;</button>
-
-</div>
-
-<div class="info">
-
-<h3>Changing Table</h3>
-
-<div class="status">
-<label>
-<input type="checkbox" disabled>
-Not Yet Purchased
-</label>
-</div>
-
-<div class="description">
-A changing table with drawers for diapers and clothes.
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==================== -->
-
-<section class="category">
-
-<h2>👕 Clothing</h2>
-
-<div class="item">
-
-<div class="carousel">
-
-<img class="active" src="https://picsum.photos/600/400?random=31">
-<img src="https://picsum.photos/600/400?random=32">
-<img src="https://picsum.photos/600/400?random=33">
-
-<button class="prev">&#10094;</button>
-<button class="next">&#10095;</button>
-
-</div>
-
-<div class="info">
-
-<h3>Newborn Onesies</h3>
-
-<div class="status">
-<label>
-<input type="checkbox" checked disabled>
-Already Purchased
-</label>
-</div>
-
-<div class="description">
-A set of soft cotton onesies in newborn and 0–3 month sizes.
-</div>
-
-</div>
-
-</div>
-
-<div class="item">
-
-<div class="carousel">
-
-<img class="active" src="https://picsum.photos/600/400?random=41">
-<img src="https://picsum.photos/600/400?random=42">
-
-<button class="prev">&#10094;</button>
-<button class="next">&#10095;</button>
-
-</div>
-
-<div class="info">
-
-<h3>Winter Jacket</h3>
-
-<div class="status">
-<label>
-<input type="checkbox" disabled>
-Not Yet Purchased
-</label>
-</div>
-
-<div class="description">
-Warm fleece-lined jacket for outdoor walks.
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==================== -->
-
-<section class="category">
-
-<h2>🍼 Feeding</h2>
-
-<div class="item">
-
-<div class="carousel">
-
-<img class="active" src="https://picsum.photos/600/400?random=51">
-<img src="https://picsum.photos/600/400?random=52">
-
-<button class="prev">&#10094;</button>
-<button class="next">&#10095;</button>
-
-</div>
-
-<div class="info">
-
-<h3>Baby Bottles</h3>
-
-<div class="status">
-<label>
-<input type="checkbox" checked disabled>
-Already Purchased
-</label>
-</div>
-
-<div class="description">
-Set of anti-colic baby bottles in different sizes.
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-Made with ❤️ for our little one.
-
-</footer>
-
-<script>
-
-document.querySelectorAll(".carousel").forEach(carousel=>{
-
-const images=carousel.querySelectorAll("img");
-
-let current=0;
-
-function show(index){
-
-images.forEach(img=>img.classList.remove("active"));
-
-images[index].classList.add("active");
-
-}
-
-carousel.querySelector(".next").addEventListener("click",()=>{
-
-current++;
-
-if(current>=images.length)
-current=0;
-
-show(current);
-
-});
-
-carousel.querySelector(".prev").addEventListener("click",()=>{
-
-current--;
-
-if(current<0)
-current=images.length-1;
-
-show(current);
-
-});
-
-});
-
-</script>
-
-</body>
 </html>
