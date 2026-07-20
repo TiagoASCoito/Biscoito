@@ -4,222 +4,52 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Baby</title>
-    <style>
-      body {
-        font-family: Arial;
-        background: #f5f5f5;
-        margin: 20px
-      }
-
-      h1 {
-        text-align: center
-      }
-
-      .cat {
-        margin: 30px 0
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 320px);
-        justify-content: center;
-        gap: 20px;
-      }
-
-      .card {
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px #0002;
-        overflow: hidden
-      }
-
-      .carousel {
-        position: relative
-      }
-
-      .carousel img {
-        display: none;
-        width: 100%;
-        height: 200px;
-        object-fit: cover
-      }
-
-      .carousel img.active {
-        display: block
-      }
-
-      .btn {
-        position: absolute;
-        top: 45%;
-        background: #0008;
-        color: #fff;
-        border: 0;
-        padding: 6px
-      }
-
-      .prev {
-        left: 0
-      }
-
-      .next {
-        right: 0
-      }
-
-      .content {
-        padding: 15px
-      }
-
-      .badge {
-        display: inline-block;
-        padding: 6px 10px;
-        border-radius: 20px;
-        font-weight: bold
-      }
-
-      @media (max-width:1400px) {
-        .grid {
-          grid-template-columns: repeat(3, 320px);
-        }
-      }
-
-      @media (max-width:1050px) {
-        .grid {
-          grid-template-columns: repeat(2, 320px);
-        }
-      }
-
-      @media (max-width:700px) {
-        .grid {
-          grid-template-columns: 320px;
-        }
-      }
-
-      .card {
-        width: 320px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .carousel {
-        height: 200px;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-      }
-
-      .cat {
-        width: max-content;
-        margin: 30px auto;
-      }
-
-      .cat h2 {
-        width: calc(4 * 320px + 3 * 20px);
-        max-width: 100%;
-        margin: 0 auto 20px auto;
-      }
-
-      @media (max-width:1400px) {
-        .cat h2 {
-          width: calc(3 * 320px + 2 * 20px);
-        }
-      }
-
-      @media (max-width:1050px) {
-        .cat h2 {
-          width: calc(2 * 320px + 1 * 20px);
-        }
-      }
-
-      @media (max-width:700px) {
-        .cat h2 {
-          width: 320px;
-        }
-      }
-    </style>
-    <style>
-      .pesq {
-        background: #fff3cd
-      }
-
-      .comp {
-        background: #f8d7da
-      }
-
-      .na {
-        background: #d1ecf1
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <h1>👶 Lista do Baby Biscoito</h1>
+    <header></header>
+    <h1>Lista do Bebé Biscoito</h1>
+    <p style="text-align: center; font-style: italic; font-size: large;">Querida família e queridos amigos, esta é uma pequena listinha de algumas coisas que pensamos ir precisar para o Bebé Biscoito.
+    <br/>A vossa amizade é o melhor presente, mas se quiserem oferecer algo, têm aqui uma breve referência.</p>
+    <hr/>
     <div class="cat">
       <h2>Acessórios</h2>
       <div class="grid">
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Espreguiçadeira/cadeiraevolutiva2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="img/mochila.jpg"><img src="img/mochila1.jpg""><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
-            <h3>Espreguiçadeira / cadeira evolutiva</h3>
+            <h3>Mochila & Porta Documentos</h3>
+            <span class="badge na">Comprado/Reservado</span>
+        
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="img/protetoralcofa.jpg"><img src="img/protetorcarrinho.jpg"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Protetor da chuva</h3>
+            <span class="badge pesq">Por pesquisa</span>
+            <p><a href="https://www.elcorteingles.pt/puericultura/A51239178-protetor-plastico-de-chuva-para-carrinho-de-passeio/?parentCategoryId=5007.21290688024&color=Sin+especificar"><b>bbest</b></a> - Protetor Plástico de Chuva para Carrinho de Passeio <br/>
+            <a href="https://www.elcorteingles.pt/puericultura/A54506403-protetor-plastico-de-chuva-para-alcofa/?parentCategoryId=5007.21290688024&color=Transparente"><b>bbest</b></a> - Protetor Plástico de Chuva para Alcofa</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="img/assentoelevatorio.jpg"><img src="img/assentoelevatorio1.jpg"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Assento Elevatório (6m - 36m)</h3>
             <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
+            <p>
+              <a href="https://www.elcorteingles.pt/puericultura/A52935197-saco-de-cadeira-de-refeicao-de-viagem-avant-com-compartimentos/?stype=text_box&parentCategoryId=5007.13714949024&color=Bege"><b>Jané</b></a> - Saco de Cadeira de Refeição de Viagem Avant com Compartimentos (Bege ou Cinzento) <br/>
+              <a href="https://www.elcorteingles.pt/puericultura/A200300113-assento-elevatorio-portatil-para-bebes-com-mais-de-6-meses/?stype=text_box&color=Verde-claro"><b>Suavinex</b></a> - Assento elevatório portátil para bebés com mais de 6 meses (Verde-claro)</p>
           </div>
         </div>
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/MochiladoBebé2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEWOZ1vfID_BgAsc1MWgAP22jD_653IiO9kUbcLNolkQ&s=10"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrs81dgnDYkIrBOvf5sWWDA7tCLknjJHhvWFctRp5Irg&s=10"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
-            <h3>Mochila do Bebé</h3>
+            <h3>Luz de presença</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Mantas2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Mantas</h3>
-            <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Portadocumentos2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Porta documentos</h3>
-            <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cat">
-      <h2>Amamentação</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/AlmofadadeAmamentação2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Almofada de Amamentação</h3>
-            <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Bombadeleite2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Bomba de leite</h3>
-            <span class="badge na">Não urgente</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Sutiãdeamamentação2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Sutiã de amamentação</h3>
-            <span class="badge na">Não urgente</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
       </div>
@@ -228,69 +58,28 @@
       <h2>Brinquedos</h2>
       <div class="grid">
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Playgym2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://cdn.artsana.com/assets/chicco/images/00012166100000_000_01_01216610025022500_1280x1280.jpg?ts=1753263618252"><img src="https://i0.wp.com/sitiodobebe.com/wp-content/uploads/sitio-do-bebe-khoala-baby-tapete01.webp?w=700&ssl=1"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
-            <h3>Play gym</h3>
+            <h3>Tapete de atividades</h3>
             <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cat">
-      <h2>Comer</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/CadeiradeAlimentação2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Cadeira de Alimentação</h3>
-            <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cat">
-      <h2>Dormir</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Berço2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Berço</h3>
-            <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
+            <p><a href="https://sitiodobebe.com/produto/kohala-baby-tapete-reversivel-animais-letras/"><b>Kohala Baby</b></a> - Tapete Reversível - Animais Letras<br/>
+                <a href="https://www.chicco.pt/produtos/brinquedos/brinquedos-para-dormir-e-relaxar/tapetes-e-ginasios-bebe/tapete-de-brincar-maxi-country-chic-2-em-1-8058664190379-00012166100000.html"><b>Chicco</b></a> - PlayGym Maxi Country 2 em 1</p>
           </div>
         </div>
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Next2Me2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEpb_FpYbqq4aMI4kk9QPRka1rhypXAvMxOk8pug9mEw&s=10"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXCMFf6Jht77pNGdyyCR1eT5yPmfyAHeLZEc478rsDNg&s"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
-            <h3>Next 2 Me</h3>
-            <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Sacosdedormir2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Sacos de dormir</h3>
+            <h3>Livros de alto contraste</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Luzdepresença2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkxSTrgK8BDx3wiukkhI15JUVYLC8HNPVCQLSl1iyhBA&s=10"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCGHkfvfTXostIzIbAPIjwXNnjG3g23wDOwZ2ToPUfdg&s"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
-            <h3>Luz de presença</h3>
+            <h3>Outros brinquedos</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Mobíliadoquarto(cómoda)2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Mobília do quarto (cómoda)</h3>
-            <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
       </div>
@@ -298,138 +87,87 @@
     <div class="cat">
       <h2>Higiene e Saúde</h2>
       <div class="grid">
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Mudafraldas2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="card">
+          <div class="carousel"><img class="active" src="https://www.tendaatacado.com.br/dicas/wp-content/uploads/2020/09/topo-quantas-fraldas-o-bebe-usa.jpg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpqX6xAy4C9kf6inuHQBcqZRqBC-pRqfk4UCOzixStg&s=10"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
-            <h3>Muda fraldas</h3>
+            <h3>Fraldas (muitaaaaas)</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
-        </div>
+        </div> 
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Termómetro2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://wells.pt/dw/image/v2/BFLP_PRD/on/demandware.static/-/Sites-wells-master-catalog/default/dwc718acde/images/wells/858/8583377-TERMOMETROS-INFRARED-THERMOMETER-0M-CHICCO-P-01.webp?sw=774&sh=774&sm=fit&sfrm=jpg&q=90"><img src="https://picsum.photos/seed/Termómetro2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
             <h3>Termómetro</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Escova2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://wells.pt/dw/image/v2/BFLP_PRD/on/demandware.static/-/Sites-wells-master-catalog/default/dwb0413c2a/images/wells/823/8232910-HIGIENE-KIT-MANICURE-HIGIENE-BEBE-BABY-WELLS-P-01.webp?sw=774&sh=774&sm=fit&sfrm=jpg&q=90"><img src="https://wells.pt/dw/image/v2/BFLP_PRD/on/demandware.static/-/Sites-wells-master-catalog/default/dw26887ff1/images/wells/823/8232910-HIGIENE-KIT-MANICURE-HIGIENE-BEBE-BABY-WELLS-P-02.webp?sw=192&sh=192&sm=fit&sfrm=jpg&q=90"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
-            <h3>Escova</h3>
+            <h3>Kit Corta-unhas</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Kitcorta-unhas2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Kit corta-unhas</h3>
-            <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Banheira+suporterecém-nascido2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Banheira + suporte recém-nascido</h3>
-            <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
+
       </div>
     </div>
     <div class="cat">
       <h2>Roupa</h2>
       <div class="grid">
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Babetes2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://static.kiabi.pt/images/saco-de-dormir-quente-com-mangas-removiveis---tog-25-bege-dsn09_1_hd1.jpg?width=500"><img src="https://www.kiabi.es/images/saco-de-dormir-calido-con-mangas-extraibles---tog-2-blanco-azy34_3_hd5.jpg"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Sacos de dormir</h3>
+            <span class="badge comp">Por comprar</span>
+            <p><i>Imagens ilustrativas</i></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs_siPJndtpzoT_qaXaRPmt3DhcgMUVCVOqBbR6MGiBw&s=10"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bxwsFvJfjDMtRJD9fpqngD79Y_4P80zncuxZmcN4TA&s=10"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
             <h3>Babetes</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Meias2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://www.vertbaudet.pt/fstrz/r/s/media.vertbaudet.pt/Pictures/vertbaudet/1120787/lote-de-5-bodies-de-mangas-curtas-floridos.jpg?width=800"><img src="https://www.vertbaudet.pt/fstrz/r/s/media.vertbaudet.pt/Pictures/vertbaudet/1120949/lote-de-bodies-de-mangas-compridas-cereja.jpg?width=800"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
-            <h3>Meias</h3>
+            <h3>Bodies</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Gorros2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Gorros</h3>
-            <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Babygrows2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://www.vertbaudet.pt/fstrz/r/s/media.vertbaudet.pt/Pictures/vertbaudet/1348728/lote-de-2-babygrows-vertbaudet-para-bebe.jpg?width=800"><img src="https://www.vertbaudet.pt/fstrz/r/s/media.vertbaudet.pt/Pictures/vertbaudet/1371073/lote-de-2-babygrows-vertbaudet-para-bebe.jpg?width=800"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
             <h3>Babygrows</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
         <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Fraldinhasdepano2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="carousel"><img class="active" src="https://www.vertbaudet.pt/fstrz/r/s/media.vertbaudet.pt/Pictures/vertbaudet/531914/conjunto-disney-winnie-the-pooh-para-bebe-com-t-shirt-tunisina-calcoes.jpg?width=800"><img src="https://media.vertbaudet.pt/Pictures/vertbaudet/257491/conjunto-de-3-pecas-em-ponto-de-liga-para-recem-nascido.jpg?width=457?width=1320"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
+          <div class="content">
+            <h3>Outra roupinha</h3>
+            <span class="badge comp">Por comprar</span>
+            <p><i>Imagens ilustrativas</i></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="carousel"><img class="active" src="https://www.vertbaudet.pt/fstrz/r/s/media.vertbaudet.pt/Pictures/vertbaudet/116423/lote-de-3-fraldas-agua-salgada.jpg?width=800"><img src="https://www.vertbaudet.pt/fstrz/r/s/media.vertbaudet.pt/Pictures/vertbaudet/692778/lote-de-3-fraldas-em-gaze-de-algodao-minisaurus.jpg?width=800"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
           <div class="content">
             <h3>Fraldinhas de pano</h3>
             <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
+            <p><i>Imagens ilustrativas</i></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="cat">
-      <h2>Transporte e segurança</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Carrinho2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Carrinho</h3>
-            <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Alcofa2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Alcofa</h3>
-            <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/CadeiraAuto2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Cadeira Auto</h3>
-            <span class="badge pesq">Em pesquisa</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Marsúpio2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Marsúpio</h3>
-            <span class="badge na">Não urgente</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="carousel"><img class="active" src="img/baby.png"><img src="https://picsum.photos/seed/Intercomunicador2/600/400"><button class="btn prev">❮</button><button class="btn next">❯</button></div>
-          <div class="content">
-            <h3>Intercomunicador</h3>
-            <span class="badge comp">Por comprar</span>
-            <p>Descrição a adicionar.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <footer></footer>
     <script>
       document.querySelectorAll(".carousel").forEach(c => {
         let i = 0,
